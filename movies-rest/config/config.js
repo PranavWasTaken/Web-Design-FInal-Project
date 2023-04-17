@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'mongodb+srv://admin:admin@cluster0.gtp4jvb.mongodb.net/?retryWrites=true&w=majority'
+    url: 'mongodb://127.0.0.1:27017/movie'
 }
