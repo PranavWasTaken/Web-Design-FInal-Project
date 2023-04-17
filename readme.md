@@ -1,2 +1,2 @@
 # Full Stack Website !! 
-A full stack website for Movie Reviews and Booking ! 
+Full stack website to watch, review movies.
