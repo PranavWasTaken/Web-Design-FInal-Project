@@ -105,7 +105,7 @@ class Register extends React.Component {
                           })
        } } 
        else if ((!(passwordRegex.test(this.state.password)))){
-        alert('should contain atleast one digit, one lowercase, one uppercase and atleast five characters');
+        alert('Password should contain atleast one digit, one lowercase, one uppercase and atleast five characters');
         this.setState({ 
                           password: '',
                           verifyPassword: ''
