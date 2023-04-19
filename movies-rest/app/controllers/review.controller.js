@@ -83,3 +83,24 @@ exports.update = (req, res) => {
         });
       })
   }
+
+  exports.findByQuery = (req, res) => {
+    let query = {
+    }
+    if(req.query.reviewId!=undefined){
+      query._id = req.query.reviewId;
+    }
+    if(req.query.movieId!=undefined){
+      query.movieId = req.query.movieId;
+    }
+
+    Review.find(query)
+    .then(reviews => {
+      res.send(reviews);
+    })
+    .catch(err => {
+        res.status(500).send({
+            message: err.message || "Some error occurred while retrieving reviews."
+        });
+    });
+}
