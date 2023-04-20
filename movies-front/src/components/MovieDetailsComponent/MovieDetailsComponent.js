@@ -418,7 +418,7 @@ class MovieDetailsComponent extends React.Component {
                                 this.state.userProfile !== undefined &&
                                 this.state.userProfile.type === 'critic' &&
                                 <div className="card shadow p-3 bg-white rounded">
-                                    <h5>ADD A REVIEW</h5>
+                                    <h5 className="black-title">ADD A REVIEW</h5>
                                     <input className="card mb-2 mt-2 p-3" name="title"
                                            onChange={this.reviewTitleEdited}
                                            placeholder="Review Title"/>

@@ -4,7 +4,7 @@
   }
   
   .black-title {
-    color: black;
+    color: rgb(240, 195, 195);
     opacity: 0.95;
   }
   
@@ -39,4 +39,7 @@
     background-blend-mode: overlay !important;
     /*width: 100%;*/
   }
-  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
