@@ -130,7 +130,7 @@ class MovieDetailsComponent extends React.Component {
 
     promptAnonUserToLogin = () => {
         alert("You must login first!")
-        this.props.history.push('/login');
+        this.props.history.push('/');
     };
 
     handleStream = (event) => {
