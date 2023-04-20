@@ -9,7 +9,7 @@ class ProfileNavBar extends React.Component {
                 <Link to="/home">
                     <button type='btn' className="text-white btn">
                         {/* <img src={logo}/> */}
-                        <span className="h1 text-primary">Movie</span><span className="h1">Z</span>
+                        <span className="h1 text-primary">Cine</span><span className="h1">Stream</span>
                     </button>
                 </Link>
             </nav>

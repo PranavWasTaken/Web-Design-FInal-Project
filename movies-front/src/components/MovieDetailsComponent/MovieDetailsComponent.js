@@ -262,7 +262,7 @@ class MovieDetailsComponent extends React.Component {
                                     {"\n"}
                                     {
                                         this.state.userProfile.isGold &&
-                                        <button className="btn w-100 btn-outline-primary" onClick={this.handleStream}>Strem Online</button>
+                                        <button className="btn w-100 btn-outline-primary" onClick={this.handleStream}>Stream Online</button>
                                     }
                                 </div>
                                 <div className="col-md-5 col-xs-5">
@@ -371,7 +371,7 @@ class MovieDetailsComponent extends React.Component {
                                     }
                                     {
                                         this.state.userProfile.isGold &&
-                                        <button onClick={this.handleStream}>Strem Online</button>
+                                        <button onClick={this.handleStream}>Stream Online</button>
                                     }
                                 </div>
                                 <div className="col-md-5 col-xs-5">
