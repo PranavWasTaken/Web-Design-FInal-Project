@@ -93,5 +93,60 @@ export default class MovieSearchComponent extends React.Component {
         }
     }
 
+    render() {
+        return (
+            <AnimatedDiv pose={this.state.isVisible ? 'visible' : 'hidden'}>
+                {
+                    this.state.userProfile.message === 'You are not logged in' &&
+                    <HomeNavigationBar loggedIn={false}/>
+
+                }
+                {
+                    this.state.userProfile.username !== undefined &&
+                    <div>
+                        <HomeNavigationBar loggedIn={true}
+                                           username={this.state.userProfile.username}
+                                           logout={this.logout}/>
+                    </div>
+                }
+                <div className="row  justify-content-center mt-4">
+                        <div className="col-md-3">
+                            <input
+                                style={{backgroundColor: 'rgb(0,0,0,0.3)', caretColor: 'rgb(255,255,0)', color: 'white', backgroundBlendMode: 'overlay', borderRadius: '5px', height: '40px', fontSize: '20px'}}
+                                className="form-control" type="text" onChange={this.searchTextUpdated}
+                                placeholder="Search" value={this.state.searchQuery}
+                                aria-label="Search"/>
+                        </div>
+                        <div className="col-md-3">
+                            <select 
+                                    style={{backgroundColor: 'rgb(0,0,0,0.3)', caretColor: 'rgb(255,255,0)', color: 'white', backgroundBlendMode: 'overlay', borderRadius: '5px', height: '40px', fontSize: '20px'}}
+                               
+                                    className="w-100" onChange={this.searchTypeUpdated}>
+                                <option value="movie">Movies</option>
+                                <option value="user">Users</option>
+                            </select>
+                        </div>
+                        <div className="col-md-3">
+                            <button type='btn' style={{height:"40px"}} className=" w-100 text-white btn btn-outline-primary ml-3" onClick={this.searchButtonClicked}>
+                                Search
+                            </button>
+                        </div>
+                </div>
+                <div className="container-fluid ml-0 ">
+                    <h6 className={'mt-4 col-12 white-title text-center'}> Search results for "{this.props.match.params.query}" </h6>
+                
+                <div className='row'>
+                    <div className='col-2'></div>
+                    <div className="col-8 mt-4 justify-content-center" style={{height:"80vh",overflowY:"scroll"}} >
+                        <ul className="list-group " >
+                            {this.renderSearchResults()}
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <FooterComponent/>
+            </AnimatedDiv>
+        );
+    }
 
 }
