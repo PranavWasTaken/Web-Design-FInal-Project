@@ -34,6 +34,36 @@ class MovieServiceClient {
         });
     }
 
+    getMovieDetails(movieId) {
+        return fetch(constants.MOVIE_DETAIL_URL.replace('MOVIE_ID', movieId), {
+            method: 'GET'
+        }).then(function (response) {
+            if(response.headers.get("content-type")!=null)
+                return response.json();
+            else return null;
+        });
+    }
+
+    getMovieCast(movieId) {
+        return fetch(constants.MOVIE_CAST_URL.replace('MOVIE_ID', movieId), {
+            method: 'GET'
+        }).then(function (response) {
+            if(response.headers.get("content-type")!=null)
+                return response.json();
+            else return null;
+        });
+    }
+
+    getMovieReviews(movieId) {
+        return fetch(constants.GET_REVIEWS_FOR_MOVIE_URL.replace('MOVIE_ID', movieId), {
+            method: 'GET'
+        }).then(function (response) {
+            if(response.headers.get("content-type")!=null)
+                return response.json();
+            else return null;
+        });
+    }
+
 
 
 
