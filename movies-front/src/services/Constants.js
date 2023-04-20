@@ -1,7 +1,7 @@
 export const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 export const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p';
 export const TMDB_BACKDROP_BASE_URL = 'https://image.tmdb.org/t/p/original';
-export const API_KEY = '8a9f6e472443b99e4c1db17d69a9fa3f';
+export const API_KEY = '9432416fde5503afd5459322a9dfe042';
 
 // export const HEROKU_BASE_URL = 'https://cryptic-ravine-64649.herokuapp.com';
 
