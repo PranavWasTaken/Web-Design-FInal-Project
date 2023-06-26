@@ -4,6 +4,7 @@ This web-design is a platform for streaming movies. Users can watch various cont
 
 
 ## Team Members:
+
 002771334 - Shubham <br>
 002771533 - Siddharth <br>
 002797481 - Nishtha <br>
@@ -20,6 +21,7 @@ The platform aims to provide users with a seamless streaming experience, as well
 4. Ensure the website is responsive and accessible on all devices
 
 ## Tech Stack:
+
 1. React
 2. MongoDB
 3. Express
@@ -27,5 +29,34 @@ The platform aims to provide users with a seamless streaming experience, as well
 
 
 ## Images
+
+Entry Page
+
+![Entry Page](https://github.com/PranavWasTaken/Web-Design-FInal-Project/blob/main/Images/Entry%20Page.png)
+
+Register Page
+
+![Register Page](https://github.com/PranavWasTaken/Web-Design-FInal-Project/blob/main/Images/Register.png)
+
+Guest Screen
+
+![Guest Screen](https://github.com/PranavWasTaken/Web-Design-FInal-Project/blob/main/Images/Guest%20Screen.png)
+
+Login Page
+
+![Login Page](https://github.com/PranavWasTaken/Web-Design-FInal-Project/blob/main/Images/Login.png)
+
+Membership Pay wall
+
+![Membership Pay wall](https://github.com/PranavWasTaken/Web-Design-FInal-Project/blob/main/Images/Membership%20Pay%20wall.png)
+
+Reviewer Role
+
+![Reviewer Role](https://github.com/PranavWasTaken/Web-Design-FInal-Project/blob/main/Images/Reviewer%20role.png)
+
+Utilising IMDB Movies API
+
+![Utilising IMDB Movies API](https://github.com/PranavWasTaken/Web-Design-FInal-Project/blob/main/Images/Utilising%20IMDB%20Movies%20API.png)
+
 
 
